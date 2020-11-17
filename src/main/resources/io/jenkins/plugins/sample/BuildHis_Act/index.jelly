@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout">
+    <l:layout>
+        <l:side-panel>
+            <div id = "tasks">
+                <div class="btn">
+                    <input type="button" value="BACK" onClick="history.go(-1)" />
+                </div>
+            </div>
+            
+        </l:side-panel>
+        <l:main-panel>
+            <script>
+                var i = ${it.LastBuildNumber_02};
+                <!-- var i = Number(${it.LastBuildNumber_02});-->
+                i = Number(i);
+                document.write(i + " " + typeof i); 
+            </script>
+
+            <h1>
+                Total Build
+            </h1>
+            <ul>
+                <li>
+                    Build Name: ${it.LastBuildNumber_01} 
+                </li>
+                <li>
+                    Last Build Number: ${it.LastBuildNumber_02} 
+                </li>
+            <table border = "1">
+                <tr>결과 값</tr>
+                <tr>
+                <th>빌드 번호</th>
+                <th>시간</th>
+                <th>값</th>
+                </tr>
+                <script>
+                for(var i = 27;;i >= 1;i--)
+                {
+                    document.write("<tr><td>",i,"</td><td>2020.11.10 오후 7:11","</td><td>",${it.value});
+                    document.write("</td></tr>");
+                }
+                </script>
+
+            </table>
+            </ul>
+            
+        </l:main-panel>
+    </l:layout>
+</j:jelly> <!-- html 작성 추가옵션 기재 예정-->
+
+
+
