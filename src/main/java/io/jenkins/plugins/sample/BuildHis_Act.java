@@ -33,22 +33,7 @@ public class BuildHis_Act implements Action {
     {
         return Integer.parseInt(Split_str[0]);
     }
-    public String getValue()
-    {
-        String Get_s="";
-        File file = new File("C://Users/OJS/Desktop/4ㅠ.txt");
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) 
-        {
-            String line;
-            while ((line = br.readLine()) != null) {
-                Get_s += line + "\n";
-        }
-        }
-        catch (IOException e) {
-            Get_s = "Null";
-        }
-        return Get_s;
-    }
+    
     public String getLastBuildNumber_02()
     {
         return Split_str[1];
