@@ -30,7 +30,7 @@ public class BuildHis_Wra extends BuildWrapper {
                 //중요 포인트(1)
                 return new Environment()
                 {
-                    public boolean Bolean(AbstractBuild build, Launcher launcher, BuildListener listener)throws IOException, InterruptedException
+                    public boolean tearDown(AbstractBuild build, Launcher launcher, BuildListener listener)throws IOException, InterruptedException
                     {
                         return true;
                     }
