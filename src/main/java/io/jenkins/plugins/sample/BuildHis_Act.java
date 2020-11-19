@@ -29,9 +29,9 @@ public class BuildHis_Act implements Action {
     {
         return this.AbBuild;
     }
-    public int getLastBuildNumber_01()
+    public String getLastBuildNumber_01()
     {
-        return Integer.parseInt(Split_str[0]);
+        return Split_str[0];
     }
     
     public String getLastBuildNumber_02()
