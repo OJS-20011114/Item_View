@@ -32,10 +32,10 @@ public class BuildHis_Wra extends BuildWrapper {
                 {
 // 			return true;
 			        
-                    public boolean tearDown(AbstractBuild build, Launcher launcher,BuildListener listener)throws IOException, InterruptedException
-                    {
-                        return true;
-                    }
+                    // public boolean tearDown(AbstractBuild build, Launcher launcher,BuildListener listener)throws IOException, InterruptedException
+                    // {
+                    //     return true;
+                    // }
                         
                     
                 }; 
