@@ -8,7 +8,7 @@
         <relativePath />
     </parent>
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>Item_View</artifactId>
     <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
     <properties>
@@ -19,7 +19,7 @@
         <jenkins.version>2.235.1</jenkins.version>
         <java.level>8</java.level>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>    </properties>
-    <name>TODO plugin</name><!-- 플러그인 이름 지정하는 곳-->
+    <name>Item_View</name><!-- 플러그인 이름 지정하는 곳-->
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
 
     <dependencyManagement>
@@ -35,11 +35,7 @@
         </dependencies>
     </dependencyManagement>
     <distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/OJS-20011114</url>
-   </repository>
+   
 </distributionManagement>
     <dependencies>
         <dependency>
