@@ -13,9 +13,9 @@
         </l:side-panel>
         <l:main-panel>
             <script>
-                var i = ${it.LastBuildNumber_02};
+                var GET_BUILD_NUM = ${it.LastBuildNumber_02};
                 <!-- var i = Number(${it.LastBuildNumber_02});-->
-                i = Number(i);
+                GET_BUILD_NUM = Number(GET_BUILD_NUM);
                 
             </script>
 
