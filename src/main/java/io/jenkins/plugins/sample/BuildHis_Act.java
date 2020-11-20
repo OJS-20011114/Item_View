@@ -23,7 +23,7 @@ public class BuildHis_Act implements Action {
     {
         this.AbBuild = AbBuild;
         String ss = this.AbBuild.toString();//
-        Split_str = ss.split(" #");//마지막 빌드 번호 받아오기
+        Split_str = ss.split(" #");//현재 빌드 번호 받아오기
     }
     public AbstractBuild getBuild()
     {

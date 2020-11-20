@@ -29,16 +29,23 @@
                 <li>
                     Last Build Number: ${it.LastBuildNumber_02} 
                 </li>
-            <table border = "1">
+                <table border="1">
                 <tr>결과 값</tr>
                 <tr>
                 <th>빌드 번호</th>
                 <th>시간</th>
                 <th>값</th>
                 </tr>
-                <script type="text/javascript" src = "SCrip_S.js"></script>
-
-            </table>
+                <script>
+                    for(var i = GET_BUILD_NUM;i >= 1;i--)
+                    {
+                        document.write("<tr><td>",i,"</td><td>2020.11.10 오후 7:11","</td><td>1029384756");
+                        document.write("</td></tr>");
+                    }
+                    document.write("</table>");
+                </script>
+                </table>
+            
             </ul>
             
         </l:main-panel>
