@@ -19,13 +19,13 @@ public class BuildHis_Act implements Action {
 
     private AbstractBuild AbBuild;//중요
     String[] Split_str = {};
-    public BuildHis_Act(AbstractBuild AbBuild)//중요
+    public BuildHis_Act(AbstractBuild AbBuild)
     {
         this.AbBuild = AbBuild;
-        String ss = this.AbBuild.toString();//
+        String ss = this.AbBuild.toString();//String 변환
         Split_str = ss.split(" #");//현재 빌드 번호 받아오기
     }
-    public AbstractBuild getBuild()
+    public AbstractBuild getBuild()//.jelly파일에서 값을 사용 시 ${it.변수 이름} 같이 사용해야 하며, 해당 파일 에서는 함수 이름 앞에 get을 붙여야 한다.
     {
         return this.AbBuild;
     }
