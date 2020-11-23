@@ -21,7 +21,7 @@ public class BuildHis_Act implements Action {
     String[] Split_str = {};
     public BuildHis_Act(AbstractBuild AbBuild)
     {
-        this.AbBuild = AbBuild;
+        this.AbBuild = AbBuild;//Ex (Job 이름) #(현재 빌드 번호)
         String ss = this.AbBuild.toString();//String 변환
         Split_str = ss.split(" #");//현재 빌드 번호 받아오기
     }
