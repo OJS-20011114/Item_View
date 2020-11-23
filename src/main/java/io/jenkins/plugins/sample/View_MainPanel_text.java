@@ -13,7 +13,7 @@ import jenkins.model.TransientActionFactory;
 
 public class View_MainPanel_text implements Action {
 
-    private Project project;
+    private Project project;//중요 1
 
     public View_MainPanel_text(Project project) {
         this.project = project;
@@ -53,7 +53,7 @@ public class View_MainPanel_text implements Action {
         return "buildStats";
     }
     @Extension
-    public static class View_all extends TransientActionFactory<Project> {
+    public static class View_all extends TransientActionFactory<Project>/*중요 2*/ {
     
         @Override
         public Class<Project> type() {
